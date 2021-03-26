@@ -17,7 +17,6 @@ public final class AffichagePlateau {
 	
 	public static void main(String[] args) {
 		Terrain jeu = new Terrain();
-		jeu.printPlateau();
 		
 		Personnage monster_1 = new Cube(jeu);
 		jeu.printPlateau();

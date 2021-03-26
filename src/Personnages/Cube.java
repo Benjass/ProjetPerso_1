@@ -158,12 +158,12 @@ public class Cube extends Personnage {
 				break;
 				
 			case monte:
-				orientation_1 = turnOne(orientation_1, Turns.vis);
-				orientation_2 = turnOne(orientation_2, Turns.vis);
-				break;
-			case descend:
 				orientation_1 = turnOne(orientation_1, Turns.devis);
 				orientation_2 = turnOne(orientation_2, Turns.devis);
+				break;
+			case descend:
+				orientation_1 = turnOne(orientation_1, Turns.vis);
+				orientation_2 = turnOne(orientation_2, Turns.vis);
 				break;
 				
 			case haut:
