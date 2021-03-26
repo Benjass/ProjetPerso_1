@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import Enumerations.Action;
-import Personnages.Basic;
+import Personnages.Cube;
 import Personnages.Personnage;
 import Terrain.Terrain;
 
@@ -19,7 +19,7 @@ public final class AffichagePlateau {
 		Terrain jeu = new Terrain();
 		jeu.printPlateau();
 		
-		Personnage monster_1 = new Basic(jeu);
+		Personnage monster_1 = new Cube(jeu);
 		jeu.printPlateau();
 		
 		//game loop
@@ -76,3 +76,4 @@ public final class AffichagePlateau {
 	}
 
 }
+
