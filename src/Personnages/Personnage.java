@@ -82,7 +82,7 @@ public abstract class Personnage {
 				}
 				break;
 			case droite:
-				if(getPositionX() != TERRE.getMaxX()) {
+				if(getPositionX() != TERRE.getMaxX()-1) {
 					setPositionX(getPositionX()+1);
 					canMoveOn = true;
 				} else {
@@ -90,7 +90,7 @@ public abstract class Personnage {
 				}
 				break;
 			case bas:
-				if(getPositionY() != TERRE.getMaxY()) {
+				if(getPositionY() != TERRE.getMaxY()-1) {
 					setPositionY(getPositionY()+1);
 					canMoveOn = true;
 				} else {
@@ -107,7 +107,7 @@ public abstract class Personnage {
 				break;
 				
 			case monte:
-				if(getPositionZ() != TERRE.getMaxZ()) {
+				if(getPositionZ() != TERRE.getMaxZ()-1) {
 					setPositionZ(getPositionZ()+1);
 					canMoveOn = true;
 				} else {
